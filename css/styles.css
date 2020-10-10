@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v18-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/open-sans-v18-latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v18-latin-700.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans',"Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #fff;
+  color: #000;
+  margin-top: 56px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SITE HEADER  */
+.site-header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  width: 100%;
+  margin-bottom: 88px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: auto;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.4;
+}
+
+.logo-img {
+  display: block;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-link {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  padding: 16px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-link::after {
+  height: 3px;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-link::after {
+  transform: scaleX(1);
+}
+
+.menu-link:active {
+  background: rgba(25, 25, 25, 0.7);
+}
+
+.menu-link:active::after {
+  display: none;
+}
+
+.phone-number {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
+  color: #fff;
+  background-color: #00BAFC;
+  border-radius: 5px;
+  padding: 5px 13px;
+  font-size: 15px;
+  line-height: 24px;
+  border: 3px solid transparent;
+}
+
+.phone-number:hover {
+  background-color: #fff;
+  color: #00BAFC;
+  border: 3px solid #00BAFC;
+}
+
+.phone-number:active {
+  background: rgba(0, 186, 252, 0.6);
+  color: #fff;
+  border: 3px solid transparent;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown-link {
+  white-space: nowrap;
+  text-decoration: none;
+  display: block;
+  color: #000000;
+  padding: 8px 8px 16px 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dropdown-link:hover {
+  background-color: #00BAFC;
+  color: #fff;
+}
+
+.dropdown-link:active {
+  background: #00BAFC;
+  opacity: 0.6;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}
